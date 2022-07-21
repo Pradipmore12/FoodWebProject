@@ -1,0 +1,263 @@
+/*@media(max-width:116px){
+
+body, #navbar, #home, .service-container {
+    width: 350vw;
+}
+}
+@media(max-width:777px){
+    
+    body,#navbar,#home,.service-container{
+        overflow-x:hidde;
+    }
+}*/
+ /*Media Query for Mobile Devices */
+
+ /*@media (max-width: 480px) {
+
+    #home{ white-space: nowrap; 
+     overflow: hidden;
+     text-overflow: ellipsis; }
+     
+   }
+/* Media Query for low resolution  Tablets, Ipads 
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode 
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+}
+  
+/* Media Query for Laptops and Desktops 
+@media (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-color: green;
+    }
+}
+  
+Media Query for Large screens 
+@media (min-width: 1281px) {
+    body {
+        background-color: white;
+    }
+}
+*/
+
+html, body {
+     
+    scroll-behavior: smooth;
+    scroll-snap-type: y;
+  }
+  
+  @media(min-width:452px) and (max-width:733px){
+      .service-container,#client-section,#client-section #clients,#client-section #clients .client-item,#client-section #clients .client-item img, #services .box,#services .box img{
+          
+      }
+  }
+  @media (max-width: 800px) {
+    html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    }
+  }
+  @media  (min-width:481px) and (max-width:777px) {
+    /*navbar*/
+    
+    #navbar ul li a {
+        padding:0px 6px;
+    }
+    
+   /*home*/ 
+    #home{
+        height:409px;
+    }  
+    #home .btn{
+        margin-top: 42px;
+    }
+    /*services*/
+    #services{
+          overflow: hidden;
+          flex-wrap:wrap;
+          height:auto;
+      }
+    /*clients*/
+     
+      #client-section{
+          height:auto;a
+      }
+      #client-section #clients {
+          flex-wrap: wrap;
+      }
+    /*contact section*/
+    /*footer*/
+      
+  }
+@media(max-width:480px){
+
+    #navbar{
+        flex-direction: column;
+        
+    }
+    #navbar #logo{
+        margin-top:20px;
+        margin-bottom: 10px;
+        
+    }
+    #navbar::before{
+        opacity:0.8;
+        background-color: rgb(70, 30, 30);
+    }
+    
+    #navbar #logo a img{
+        width:90px;
+        height:90px;
+        border:1px solid black;
+        border-radius: 100px;
+    }
+    #navbar ul{
+        flex-direction: column;
+        text-align: center;
+        font-size:1.6rem;
+    }
+    #navbar ul li{
+        width:100%;
+    }
+/*home*/
+#home{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 10px 24px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+
+}
+#home p{
+    text-align:justify;
+    font-size: 1.8rem;
+    list-style: 1.6rem;
+}
+#home h1{
+    text-align: center;
+    color:rgb(44, 28, 28);
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3.1rem;
+    margin-bottom: 10px;
+    
+}
+#home .btn{
+    
+        padding: 4px 3px;
+        background-color: rgb(255, 91, 27);
+        border: 2px solid rgb(92, 86, 86);
+        border-radius: 30px;
+        text-align: center;
+        color: white;
+        margin: 20px;
+        font-size: 1.6rem;
+        cursor: pointer;
+        width: 51%;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    
+
+
+}
+#home .btn:hover {
+    width: 264px;
+    height: 69px;
+}
+/*services*/
+#service-container .hprimary{
+padding-top: 0px;
+}
+#services{
+    margin:10px;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+    
+}
+#services p{
+    font-size: 1.2rem;
+    text-align: justify;
+
+}
+#services .box img:hover {
+    width:195px;
+    height:190px
+
+}
+
+/*Cllients section*/
+#client-section{
+    height:auto;
+}
+#client-section #clients{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 0px;
+        align-items: center;
+}
+#client-section #clients .client-item {
+    margin: 34px 5px;
+    padding: 0px;
+}
+#client-section #clients #comp1{
+margin-left: ;
+}
+#client-section #clients #comp2{
+ margin-right: ;   
+}
+#client-section #clients #comp3{
+ margin-left: ;
+ margin-right: ;
+}
+#client-section #clients #comp4{
+margin-right: ;
+margin-left: ;
+}
+/*Contact section*/
+.contact-form form {
+    width: 70%;
+}
+#contact form .form-item label {
+    font-size: 1.8rem;
+}
+#contact form .form-item input,#contact form .form-item textarea{
+    font-size: 1.4rem;
+}
+/*ssutility classes*/
+.hprimary{
+    font-size: 3.3rem;
+    padding:10px;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.hsecondery{
+    font-size: 2.5rem;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+}
+
+@media(max-width:360px){
+    #client-section #clients .client-item img{
+        height:3rem;
+    }
+}

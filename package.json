@@ -1,0 +1,15 @@
+{
+  "name": "html_css_pr2",
+  "version": "1.0.0",
+  "description": "my prj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pradip",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.19"
+  }
+}

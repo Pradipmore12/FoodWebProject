@@ -1,0 +1,295 @@
+/*css reset*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+
+    
+}
+
+
+/*navigation Bar*/
+#navbar::before{
+    content:"";
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:black ;
+    z-index:-1;
+    opacity:0.5;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position:relative;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+/*logo and imge*/
+#logo{
+    margin: 5px 11px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+
+}
+#logo img{
+    width:50px;
+    height:50px;
+}
+/*navigation list*/
+ul{
+    display:flex;
+    list-style: none;
+    margin:auto;
+    
+
+}
+.listitem{
+    margin:10px;
+    /*color:white;
+    font-size:1.3rem;*/
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    color:white;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+/*home section*/
+#home::before{
+    content:"";
+    position:absolute;
+    background: url("../images/img1.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    opacity:0.6;
+    z-index: -2;
+
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    padding: 18px 50px;
+    justify-content: center;
+    align-items: center;
+    height:595px;
+
+
+}
+#home p{
+    text-align: center;
+}
+#home h1{
+    text-align: center;
+    color:rgb(44, 28, 28);
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Varela Round', sans-serif;
+}
+p{
+    text-align:justify;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2rem;
+    color:black;
+
+}
+#home .btn{
+    padding:5px 8px;
+    background-color:rgb(255, 91, 27) ;
+    border:2px solid rgb(92, 86, 86);
+    border-radius: 30px;
+    text-align: center;
+    color:white;
+    margin:20px;
+    font-size: 1.2rem;
+    cursor:pointer;
+
+
+}
+#home .btn:hover{
+    color:black;
+    background-color: rgb(236, 223, 101);
+}
+/*services section*/
+.services-container{
+    margin-top: 11px;
+}
+#services{
+    margin:10px;
+    margin-top: 10px;
+    display:flex;
+    
+}
+#services .box{
+    border:3px solid rgb(224, 156, 7);
+    padding: 30px;
+    margin:3px 6px;
+    border-radius: 13px;
+    
+}
+#services .box img{
+    height:170px;
+    display:block;
+    margin:auto;
+}
+#bulk{
+    height:160px;
+}
+
+/*client section*/
+#client-section::before{
+    content:"";
+    position:absolute;
+    left:0px;
+    top:0px;
+    height: 100%;
+    width:100%;
+    background: url("../images/img2.jpg");
+    background-position:center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    z-index:-1;
+    opacity:0.3;
+
+}
+#client-section{
+    height:290px;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+#client-section h1{
+   color:rgb(36, 28, 28)
+
+
+}
+#client-section #clients{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+#client-section #clients .client-item{
+    margin:10px 20px;
+    padding: 10px;
+    
+}
+#client-section #clients .client-item img{
+    height:80px;
+}
+/*contact section*/
+#contact{
+    position:relative;
+
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    background: url("../images/pexels-ahmed-aqtai-63572.jpg");
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.6;
+    
+}
+#contact .contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:34px ;
+}
+#contact form .form-item{
+    
+}
+#contact form .form-item label{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+    
+}
+#contact form .form-item input,#contact form .form-item button,#contact form .form-item textarea{
+    background-color: blanchedalmond;
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border:2px solid black;
+
+}
+#contact form .form-item textarea{
+    width:100%;
+    padding: 0.5rem;
+    border:2px solid black;
+    border-radius: 10px;
+
+}
+.contact-form form{
+    width:40%;
+}
+#contact form .form-item button{
+    cursor:pointer;
+   background-color:  rgb(233, 131, 124) ;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 1.2rem;
+}
+#contact form .form-item button:hover{
+    background-color: rgb(247, 86, 37);
+    color:white;
+    
+}
+
+/*footer section*/
+footer{
+    background-color: black;
+    color:white;
+    padding:2px;
+}
+
+
+ /*ssutility classes*/
+.hprimary{
+    font-size: 3.2rem;
+    padding:10px;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.hsecondery{
+    font-size: 2.1rem;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+.center{
+    text-align: center;
+}
+@media screen and(max-width:300px){
+    *{
+        overflow:scroll;
+    }
+}
