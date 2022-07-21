@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname +'/public')));
 app.get('^/$|/index(.html)?', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
-app.listen(process.env.port || 3000,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("server is listening;");
     console.log(__dirname);
 });
